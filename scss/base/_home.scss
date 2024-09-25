@@ -57,6 +57,10 @@ body{
         }
         p{
             padding: 20px 30px;
+            box-shadow: 0 2px 2px white;
+            box-sizing: border-box;
+            border-radius: 10px;
+
         }
         
     }
@@ -64,6 +68,7 @@ body{
         div{
             .img-text-1{
                 @include texts-home(30px);
+                @include rico-borde;
                 .camison{
                     img{
                         @include img-size(200px)
@@ -72,6 +77,8 @@ body{
             }
             .img-text-2{
                 @include texts-home(30px);
+                @include rico-borde;
+
                 .falda{
                     img{
                         @include img-size(200px)
@@ -80,6 +87,8 @@ body{
             }
             .img-text-3{
                 @include texts-home(30px);
+                @include rico-borde;
+
                 .buzo{
                     img{
                         @include img-size(200px)
@@ -87,7 +96,14 @@ body{
                 }
             }
             .text-camison{
+                         
+                
                 @include img-home;
+                p{
+                    .hide{
+                        background-color: aqua
+                    }
+                }
             }
             .text-falda{
                 @include img-home;
@@ -149,6 +165,7 @@ body{
 
 //HTML de nosotros
 //seccion del main 
+
 .us-main{
     .nosotros{
         div{
@@ -164,12 +181,12 @@ body{
                 margin: 15px;            
             }
             img{
-                @include borde-r(80px);                padding: 3px;
+                @include borde-r(80px);                
+                padding: 3px;
             }
         }
     }
 }
-
 
 //estilo de NOSOTROS para tablet
 

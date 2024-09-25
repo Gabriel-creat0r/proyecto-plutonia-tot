@@ -36,3 +36,8 @@
     display: none;
 }
 
+@mixin rico-borde{
+    box-shadow: 0 2px 2px white;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
