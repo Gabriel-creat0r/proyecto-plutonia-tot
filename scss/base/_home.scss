@@ -67,7 +67,7 @@ body{
     section{
         div{
             .img-text-1{
-                @include texts-home(30px);
+                @include texts-home(20px);
                 @include rico-borde;
                 .camison{
                     img{
