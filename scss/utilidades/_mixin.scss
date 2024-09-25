@@ -1,0 +1,38 @@
+@mixin flex{
+    display:flex;
+    align-items: center;
+}
+
+
+@mixin texts-home($padding){
+    padding: $padding;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+@mixin img-home{
+    padding: 30px;
+    text-align: center;
+}
+
+@mixin img-size($width){
+    width: $width;
+    margin: 20px 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: nth($list-color, 2);
+}
+@mixin borde-r($border-radius){
+    border-radius: $border-radius;
+    background-color: nth($list-color , 4);
+}
+
+@mixin com-uds($margin){
+    margin: $margin;
+    font-size: 25px;
+}
+
+@mixin desaparecer{
+    display: none;
+}
+

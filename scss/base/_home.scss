@@ -1,0 +1,440 @@
+//import de listas
+@import "../utilidades/variables";
+@import "../utilidades/listas";
+@import "../utilidades/mixin";
+
+
+body{
+    background-color: $color-principal;
+}
+//Menu de navegacion para todas las HTML
+
+.menu-allhtml {
+    @include flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+
+    img {
+        padding: 30px;
+        margin: 10px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 0.5rem;
+            padding-right: 15px;
+
+            li{
+                padding: 15px;
+                border-radius: 80px;
+                background-color: nth($list-color, 2);
+                transition: background-color 0.5s;
+                &:hover {
+                    background-color: nth($list-color, 4);
+                }
+                a{
+                    color: nth($list-color, 3);    
+                    text-decoration: none;        
+                }
+
+            }
+        }
+    }
+}
+
+
+//html HOME
+//seccion del main
+ .home{
+    .introduccion{
+        color: $color-de-texto;
+        text-align: center;
+        padding: 20px;    
+        h1{
+            margin: 20px 20px;
+        }
+        p{
+            padding: 20px 30px;
+        }
+        
+    }
+    section{
+        div{
+            .img-text-1{
+                @include texts-home(30px);
+                .camison{
+                    img{
+                        @include img-size(200px)
+                    }
+                }
+            }
+            .img-text-2{
+                @include texts-home(30px);
+                .falda{
+                    img{
+                        @include img-size(200px)
+                    }
+                }
+            }
+            .img-text-3{
+                @include texts-home(30px);
+                .buzo{
+                    img{
+                        @include img-size(200px)
+                    }
+                }
+            }
+            .text-camison{
+                @include img-home;
+            }
+            .text-falda{
+                @include img-home;
+            }
+            .text-buzo{
+                @include img-home;
+            }
+        }
+    }
+
+ }
+
+ //estilos de home para TABLET
+
+@media screen and (min-width: 600px){
+    .home section div .text-camison{
+        font-size: 30px;
+    }
+    .home section div .text-falda{
+        font-size: 30px;
+    }
+    .home section div .text-buzo{
+        font-size: 30px;
+    }
+}
+
+//estilos de home para DESKTOP
+
+@media screen and (min-width: 1024px){
+    .home .introduccion h1{
+        font-size: 40px;
+        margin: 40px 200px;
+    }
+    .home .introduccion p{
+        font-size: 25px;
+        padding: 20px 200px;
+    }    
+    .home section div{
+        padding: 30px;
+    }
+}
+
+//seccion del FOOTER
+
+.redes{
+    display: flex;
+    justify-content: center;
+    nav{
+        display: flex;
+        a{
+            text-decoration: none;
+            color: $color-de-texto;
+            text-align: center;
+            margin: 40px;
+            padding: 30px;
+        }
+    }
+}
+
+//HTML de nosotros
+//seccion del main 
+.us-main{
+    .nosotros{
+        div{
+            display: inline-block;
+            align-items: center;
+            justify-content:center; 
+            text-align: center;
+            margin: 20px;
+            padding: 30px;
+            p{
+                font-size: 25px;
+                color: $color-de-texto;
+                margin: 15px;            
+            }
+            img{
+                @include borde-r(80px);                padding: 3px;
+            }
+        }
+    }
+}
+
+
+//estilo de NOSOTROS para tablet
+
+@media screen and (min-width: 600px){
+   
+    .us-main .nosotros div{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }    
+}
+
+//estilo de Nosotros para DESKTOP
+
+@media screen and (min-width: 1024px){
+    .us-main .nosotros div{
+        display: block;
+        background-color: rgb(0, 0, 0);
+    }    
+    .us-main .nosotros div img{
+        width: 12%;
+    }
+}
+
+
+//HTML DE indumentaria
+//seccion del MAIN
+.indu{
+    margin: 40px 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 29%);
+    row-gap: 1.5rem;
+    .ind-tres, .ind-cuatro{
+        display: none;
+    }
+    h2{
+        color: $color-de-texto;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
+    div{
+        img{
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            object-fit: cover;
+            border-radius: 80px;
+            background-color: nth($list-color , 4);
+        }
+        h2{
+            color: $color-de-texto;
+        }
+    }
+
+}
+
+//estilo de Indumentaria para tablet
+
+@media screen and (min-width: 600px){
+    .indu .ind-cuatro{
+        display: block;
+    }
+
+    .indu{
+        grid-template-columns:repeat(2, 1fr) ;
+        grid-template-rows: repeat(2 ,50%);
+    }
+    
+}
+
+//estilo de indumentaria para desktop
+
+@media screen and (min-width: 1024px){
+    .indu .ind-cuatro, .indu .ind-tres{
+        display: block;
+    }
+    .indu{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 40%);
+        
+    }
+    .indu .ind-uno img{
+        object-fit: 20%;
+    }
+    .indu .ind-cinco{
+        grid-column: span 2;
+    }    
+}
+
+//html de USTEDES 
+.ustedes{
+    background-color: rgb(255, 196, 0);
+    margin: 20px;
+    padding: 50px;    
+    border-radius: 70px;
+    text-align: center;
+    .comentarios{
+        .intro-com{
+            @include com-uds(20px);
+        }
+        h2{
+            @include com-uds(20px);
+        }
+        .ocultar{
+            display: none;
+        }
+        .all-quest{
+            div{
+                padding: 10px;
+            }
+        }
+    }
+}
+
+//estilo de USTEDES para tablet
+//opiniones
+@media screen and (min-width: 600px){
+    .ustedes{
+        margin: 50px;
+    }
+    
+
+    .ustedes .comentarios .ocultar{
+        display: block;
+    }
+    .ustedes .comentarios .intro-com{
+        font-size: 25px;
+    }
+    
+    .ustedes .comentarios .opiniones{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 2rem;
+        column-gap: 1rem;
+    }
+    .ustedes .comentarios .intro-com{
+        grid-column: span 2;
+    }
+    .ustedes .comentarios .opi-uno{
+        grid-column: span 2;
+    }
+    .ustedes .comentarios .opi-dos{
+        grid-row: span 1;
+    }
+    .ustedes .comentarios .opi-tres{
+        grid-row: span 1;
+    }
+    .ustedes .comentarios .opi-cuatro{
+        grid-column: span 2;
+
+    }
+    .ustedes .comentarios .opi-cinco{
+        grid-row: span 1;
+    }
+    .ustedes .comentarios .opi-seis{
+        grid-row: span 1;
+    }
+/*PREGUNTAS FRECUENTES*/
+    .ustedes .comentarios .f-q{
+        margin: 25px;
+    }
+    .ustedes .comentarios .all-quest{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2 ,1fr);
+        row-gap: 1rem;
+    }
+    .ustedes .comentarios .all-quest .quest-uno{
+        grid-column: span 2;
+    }
+}
+
+/*estilos de Ustedes para desktop*/
+/*OPINIONES*/
+@media screen and (min-width: 1024px){
+    .ustedes .comentarios .opiniones{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4 ,1fr);
+        row-gap: 3rem;
+        column-gap: 2rem;
+    }
+    .ustedes{
+        margin: 60px;
+    }
+    
+    .ustedes .comentarios .intro-com{
+        grid-column: span 2;
+        font-size: 40px;
+    }
+    .ustedes .comentarios .opi-uno{
+        grid-column: span 1;
+        font-size: $tamaño-txt-desktop;
+    }
+    .ustedes .comentarios .opi-dos{
+        grid-column: span 1;
+        font-size: $tamaño-txt-desktop;
+
+    }
+    .ustedes .comentarios .opi-tres{
+        grid-column: span 1;
+        font-size: $tamaño-txt-desktop;
+
+    }
+    .ustedes .comentarios .opi-cuatro{
+        grid-column: span 1;
+        font-size: $tamaño-txt-desktop;
+
+    }
+    .ustedes .comentarios .opi-cinco{
+        grid-column: span 1;
+        font-size: $tamaño-txt-desktop;
+
+    }
+    .ustedes .comentarios .opi-seis{
+        grid-column: span 1;
+        font-size: $tamaño-txt-desktop;
+
+    }
+//preguntas frecuentes
+    .ustedes .comentarios .f-q{
+        font-size: 40px;
+        margin: 25px;
+    }
+}
+//HTML de CONTACTO 
+
+.m-contacto{
+    margin: 30px;
+    padding: 30px;
+    .img-envio{
+        text-align: center;
+        img{
+            width: 290px;
+            border-radius: 80px;
+        }
+    }
+    h3{
+        color: $color-de-texto;
+        text-align: center;
+        font-size: 30px;
+        margin: 20px;    
+    }
+    .text-envio{
+        p{
+            color: $color-de-texto;
+            text-align: center;
+            font-size: 20px;
+            margin: 20px;
+            padding: 20px;
+        }
+    }
+    .ubicacion{
+        text-align: center;
+    }
+
+}
+
+//estilos de CONTACTO para TABLET
+@media screen and (min-width: 600px){
+    .m-contacto .img-envio img{
+        width: 300px;
+    }
+}
+
