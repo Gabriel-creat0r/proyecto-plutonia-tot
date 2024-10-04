@@ -162,6 +162,11 @@ body {
   text-align: center;
   margin: 20px;
   padding: 30px;
+  border-radius: 80px;
+  transition: background-color 0.5s;
+}
+.us-main .nosotros div:hover {
+  background-color: rgb(27, 0, 27);
 }
 .us-main .nosotros div p {
   font-size: 25px;
@@ -190,6 +195,12 @@ body {
     width: 12%;
   }
 }
+h1 {
+  color: white;
+  text-align: center;
+  margin: 50px;
+}
+
 .indu {
   margin: 40px 40px;
   display: grid;
@@ -200,11 +211,18 @@ body {
 .indu .ind-tres, .indu .ind-cuatro {
   display: none;
 }
+.indu h1 {
+  background-color: aqua;
+  color: azure;
+}
 .indu h2 {
   color: white;
   text-align: center;
   margin: 5px;
   padding: 5px;
+}
+.indu div {
+  margin: 20px;
 }
 .indu div img {
   width: 100%;
@@ -215,6 +233,7 @@ body {
   background-color: rgb(119, 0, 119);
 }
 .indu div h2 {
+  padding: 10px;
   color: white;
 }
 

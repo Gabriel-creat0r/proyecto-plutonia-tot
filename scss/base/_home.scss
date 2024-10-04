@@ -8,7 +8,7 @@ body{
     background-color: $color-principal;
 }
 //Menu de navegacion para todas las HTML
-
+// CREAR MQ PARA DESKTOP NADA MAS, LA DE MOBILE PASA A SER LA QUE TIEN LA MODIFICACION DE LETI
 .menu-allhtml {
     @include flex;
     flex-wrap: wrap; 
@@ -44,9 +44,8 @@ body{
     }
 }
 
-
 //html HOME
-//seccion del main
+//seccion del main 
  .home{
     .introduccion{
         color: $color-de-texto;
@@ -175,6 +174,12 @@ body{
             text-align: center;
             margin: 20px;
             padding: 30px;
+            border-radius: 80px;
+            transition: background-color 0.5s;
+            &:hover {
+                background-color: nth($list-color, 5);
+            }
+
             p{
                 font-size: 25px;
                 color: $color-de-texto;
@@ -214,6 +219,11 @@ body{
 
 //HTML DE indumentaria
 //seccion del MAIN
+h1{
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
 .indu{
     margin: 40px 40px;
     display: grid;
@@ -223,6 +233,10 @@ body{
     .ind-tres, .ind-cuatro{
         display: none;
     }
+    h1{
+        background-color: aqua;
+        color: azure;
+    }
     h2{
         color: $color-de-texto;
         text-align: center;
@@ -230,15 +244,17 @@ body{
         padding: 5px;
     }
     div{
+        margin: 20px;
         img{
             width: 100%;
             height: 100%;
             padding: 5px;
             object-fit: cover;
             border-radius: 80px;
-            background-color: nth($list-color , 4);
+            background-color: nth($list-color , 4);            
         }
         h2{
+            padding: 10px;
             color: $color-de-texto;
         }
     }
@@ -454,4 +470,3 @@ body{
         width: 300px;
     }
 }
-
