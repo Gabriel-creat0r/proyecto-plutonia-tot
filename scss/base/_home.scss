@@ -20,6 +20,42 @@ body{
     }
 
     nav {
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 0.5rem;
+            padding-right: 15px;
+
+            li{
+                padding: 15px;
+                border-radius: 80px;
+                background-color: nth($list-color, 2);
+                transition: background-color 0.5s;
+                &:hover {
+                    background-color: nth($list-color, 4);
+                }
+                a{
+                    color: nth($list-color, 3);    
+                    text-decoration: none;        
+                }
+
+            }
+        }
+    }
+}
+@media screen and (min-width:600px){
+    .menu-allhtml {
+    @include flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+
+    img {
+        padding: 30px;
+        margin: 10px;
+    }
+
+    nav {
         ul {
             display: flex;
             list-style: none;
@@ -44,9 +80,12 @@ body{
     }
 }
 
+    
+}
 //html HOME
 //seccion del main 
  .home{
+
     .introduccion{
         color: $color-de-texto;
         text-align: center;
@@ -244,7 +283,7 @@ h1{
         padding: 5px;
     }
     div{
-        margin: 20px;
+        margin: 50px;
         img{
             width: 100%;
             height: 100%;
@@ -432,6 +471,7 @@ h1{
     }
 }
 //HTML de CONTACTO 
+
 
 .m-contacto{
     margin: 30px;
