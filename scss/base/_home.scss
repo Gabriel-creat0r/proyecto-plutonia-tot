@@ -104,6 +104,7 @@ body{
     section{
         div{
             .img-text-1{
+                flex-direction: column;
                 @include texts-home(20px);
                 @include rico-borde;
                 .camison{
@@ -113,6 +114,7 @@ body{
                 }
             }
             .img-text-2{
+                flex-direction: column;
                 @include texts-home(30px);
                 @include rico-borde;
 
@@ -123,6 +125,7 @@ body{
                 }
             }
             .img-text-3{
+                flex-direction: column;
                 @include texts-home(30px);
                 @include rico-borde;
 
@@ -156,6 +159,7 @@ body{
  //estilos de home para TABLET
 
 @media screen and (min-width: 600px){
+
     .home section div .text-camison{
         font-size: 30px;
     }
@@ -164,6 +168,21 @@ body{
     }
     .home section div .text-buzo{
         font-size: 30px;
+    }
+    .home{
+        section{
+            div{
+                .img-text-1{
+                    flex-direction: row;
+                }
+                .img-text-2{
+                    flex-direction: row;
+                }
+                .img-text-3{
+                    flex-direction: row;
+                }
+            }
+        }
     }
 }
 
