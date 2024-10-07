@@ -9,6 +9,8 @@
     color: white;
     display: flex;
     align-items: center;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
 }
 
 @mixin img-home{
@@ -30,7 +32,9 @@
 
 @mixin com-uds($margin){
     margin: $margin;
-    font-size: 25px;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
     color: blacK;
 }
 
@@ -42,4 +46,10 @@
     box-shadow: 0 2px 2px white;
     box-sizing: border-box;
     border-radius: 10px;
+}
+
+@mixin txt-style{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
 }
