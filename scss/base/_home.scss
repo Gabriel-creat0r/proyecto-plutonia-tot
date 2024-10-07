@@ -370,8 +370,14 @@ h1{
         .all-quest{
             div{
                 padding: 10px;
+                font-size: 20px;
             }
+
         }
+        .f-q{
+            font-size: 28px;
+        }
+
     }
 }
 
@@ -422,6 +428,7 @@ h1{
 /*PREGUNTAS FRECUENTES*/
     .ustedes .comentarios .f-q{
         margin: 25px;
+
     }
     .ustedes .comentarios .all-quest{
         display: grid;
@@ -432,6 +439,7 @@ h1{
     .ustedes .comentarios .all-quest .quest-uno{
         grid-column: span 2;
     }
+
 }
 
 /*estilos de Ustedes para desktop*/
@@ -483,9 +491,9 @@ h1{
     }
 //preguntas frecuentes
     .ustedes .comentarios .f-q{
-        font-size: 0px;
+        font-size: 30px;
         margin: 25px;
-        
+
     }
 }
 

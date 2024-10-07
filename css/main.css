@@ -313,16 +313,22 @@ h1 {
 .ustedes .comentarios .intro-com {
   margin: 20px;
   font-size: 25px;
+  color: blacK;
 }
 .ustedes .comentarios h2 {
   margin: 20px;
   font-size: 25px;
+  color: blacK;
 }
 .ustedes .comentarios .ocultar {
   display: none;
 }
 .ustedes .comentarios .all-quest div {
   padding: 10px;
+  font-size: 20px;
+}
+.ustedes .comentarios .f-q {
+  font-size: 28px;
 }
 
 @media screen and (min-width: 600px) {
@@ -419,7 +425,7 @@ h1 {
     font-size: 20px;
   }
   .ustedes .comentarios .f-q {
-    font-size: 0px;
+    font-size: 30px;
     margin: 25px;
   }
 }
