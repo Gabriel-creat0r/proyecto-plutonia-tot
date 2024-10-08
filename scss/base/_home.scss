@@ -254,7 +254,6 @@ body{
                 font-family: "Cinzel", serif;
                 font-optical-sizing: auto;
                 font-weight: 700;
-                font-size: 25px;
                 color: $color-de-texto;
                 margin: 15px;            
             }
@@ -274,6 +273,8 @@ body{
         display: flex;
         justify-content: center;
         text-align: center;
+        font-size: 25px;
+
     }    
 }
 
@@ -560,7 +561,6 @@ h1{
         text-align: center;
             .img-envio{
         display: inline-block;
-        margin: 50px;
             img{
                 width: 290px;
                 border-radius: 80px;
