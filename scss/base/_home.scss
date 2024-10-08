@@ -560,18 +560,16 @@ h1{
     .tres-img{
         text-align: center;
             .img-envio{
-        display: inline-block;
+                padding: 15px;
+                display: inline-block;
             img{
                 width: 290px;
                 border-radius: 80px;
             }
     }
     }
-    h3{
-        color: $color-de-texto;
-        text-align: center;
-        font-size: 30px;
-        margin: 20px;  
+    h1{
+        font-size: 20px;  
         }
     .text-envio{
         p{

@@ -502,17 +502,15 @@ h1 {
   text-align: center;
 }
 .m-contacto .tres-img .img-envio {
+  padding: 15px;
   display: inline-block;
 }
 .m-contacto .tres-img .img-envio img {
   width: 290px;
   border-radius: 80px;
 }
-.m-contacto h3 {
-  color: white;
-  text-align: center;
-  font-size: 30px;
-  margin: 20px;
+.m-contacto h1 {
+  font-size: 20px;
 }
 .m-contacto .text-envio p {
   color: white;
