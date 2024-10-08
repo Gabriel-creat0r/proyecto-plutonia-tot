@@ -70,7 +70,7 @@ body {
   }
 }
 .home .introduccion {
-  background-image: url("../img/toti.png");
+  background-image: url("../img/toti-chet.png");
   background-size: cover;
   background-position: center;
   color: black;
@@ -211,6 +211,11 @@ body {
   color: white;
   text-align: center;
   padding: 30px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  color: white;
+  font-size: 15px;
 }
 
 .us-main .nosotros div {
@@ -328,11 +333,15 @@ h1 {
   padding: 50px;
   border-radius: 70px;
   text-align: center;
+  background-image: url("../img/model-chet.png");
+  background-size: cover;
+  background-position: center;
 }
 .ustedes .comentarios .opiniones .opi-uno, .ustedes .comentarios .opiniones .opi-dos, .ustedes .comentarios .opiniones .opi-tres, .ustedes .comentarios .opiniones .opi-cuatro, .ustedes .comentarios .opiniones .opi-cinco, .ustedes .comentarios .opiniones .opi-seis {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 600;
+  color: white;
   font-size: 20px;
 }
 .ustedes .comentarios .intro-com {
@@ -341,6 +350,7 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 900;
   color: blacK;
+  color: white;
 }
 .ustedes .comentarios h2 {
   margin: 20px;
@@ -352,15 +362,17 @@ h1 {
 .ustedes .comentarios .ocultar {
   display: none;
 }
+.ustedes .comentarios .f-q {
+  font-size: 30px;
+  color: white;
+}
 .ustedes .comentarios .all-quest div {
   padding: 10px;
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  font-size: 25px;
-}
-.ustedes .comentarios .f-q {
-  font-size: 30px;
+  color: white;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 600px) {
@@ -371,6 +383,7 @@ h1 {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: 600;
+    color: white;
     font-size: 30px;
   }
   .ustedes .comentarios .all-quest div {
@@ -378,6 +391,7 @@ h1 {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: 600;
+    color: white;
     font-size: 30px;
   }
   .ustedes .comentarios .ocultar {
@@ -478,6 +492,12 @@ h1 {
   margin: 30px;
   padding: 30px;
 }
+.m-contacto h1 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  color: white;
+}
 .m-contacto .tres-img {
   text-align: center;
 }
@@ -498,6 +518,10 @@ h1 {
 .m-contacto .text-envio p {
   color: white;
   text-align: center;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  color: white;
   font-size: 20px;
   margin: 20px;
   padding: 20px;

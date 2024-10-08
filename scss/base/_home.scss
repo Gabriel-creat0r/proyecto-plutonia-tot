@@ -86,7 +86,7 @@ body{
  .home{
 
     .introduccion{
-        background-image: url('../img/toti.png');
+        background-image: url('../img/toti-chet.png');
         background-size: cover;
         background-position: center;
         color: $color-b-de-texto;
@@ -225,6 +225,8 @@ body{
             color: $color-de-texto;
             text-align: center;
             padding: 30px;
+            @include txt-style;
+            font-size: 15px;
         }
     }
 }
@@ -372,6 +374,11 @@ h1{
     padding: 50px;    
     border-radius: 70px;
     text-align: center;
+    background-image: url('../img/model-chet.png');
+    background-size: cover;
+    background-position: center;
+
+    
     .comentarios{
         .opiniones{
             .opi-uno, .opi-dos, .opi-tres, .opi-cuatro, .opi-cinco, .opi-seis{
@@ -382,24 +389,29 @@ h1{
         }
         .intro-com{
             @include com-uds(20px);
+            color: white;
+
         }
         h2{
             @include com-uds(20px);
+            
         }
         .ocultar{
             display: none;
+        }
+                    
+        .f-q{
+            font-size: 30px;
+            color: white;
         }
         .all-quest{
             div{
                 padding: 10px;
                 @include txt-style;
-                font-size: 25px;
+                font-size: 20px;
             }
+        }
 
-        }
-        .f-q{
-            font-size: 30px;
-        }
 
     }
 }
@@ -410,6 +422,7 @@ h1{
 
     .ustedes{
         margin: 50px;
+
         .comentarios{
             .opiniones{
                 .opi-uno, .opi-dos, .opi-tres, .opi-cuatro, .opi-cinco, .opi-seis{
@@ -540,6 +553,9 @@ h1{
 .m-contacto{
     margin: 30px;
     padding: 30px;
+    h1{
+        @include txt-style;
+    }
     .tres-img{
         text-align: center;
             .img-envio{
@@ -555,12 +571,13 @@ h1{
         color: $color-de-texto;
         text-align: center;
         font-size: 30px;
-        margin: 20px;    
-    }
+        margin: 20px;  
+        }
     .text-envio{
         p{
             color: $color-de-texto;
             text-align: center;
+            @include txt-style;
             font-size: 20px;
             margin: 20px;
             padding: 20px;
