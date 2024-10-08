@@ -235,7 +235,6 @@ body {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-size: 25px;
   color: white;
   margin: 15px;
 }
@@ -250,6 +249,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -503,7 +503,6 @@ h1 {
 }
 .m-contacto .tres-img .img-envio {
   display: inline-block;
-  margin: 50px;
 }
 .m-contacto .tres-img .img-envio img {
   width: 290px;
