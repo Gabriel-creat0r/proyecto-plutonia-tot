@@ -27,6 +27,7 @@ body{
             padding-right: 15px;
 
             li{
+                
                 padding: 15px;
                 border-radius: 80px;
                 background-color: nth($list-color, 2);
@@ -35,8 +36,13 @@ body{
                     background-color: nth($list-color, 4);
                 }
                 a{
+                    text-align: center;
                     color: nth($list-color, 3);    
-                    text-decoration: none;        
+                    text-decoration: none;
+                    font-family: "Cinzel", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 600;
+                    
                 }
 
             }

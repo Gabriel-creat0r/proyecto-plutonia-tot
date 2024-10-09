@@ -34,8 +34,12 @@ body {
   background-color: rgb(119, 0, 119);
 }
 .menu-allhtml nav ul li a {
+  text-align: center;
   color: rgb(255, 196, 0);
   text-decoration: none;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 600px) {
