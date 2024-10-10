@@ -42,37 +42,6 @@ body {
   font-weight: 600;
 }
 
-@media screen and (min-width: 600px) {
-  .menu-allhtml {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .menu-allhtml img {
-    padding: 30px;
-    margin: 10px;
-  }
-  .menu-allhtml nav ul {
-    display: flex;
-    list-style: none;
-    gap: 0.5rem;
-    padding-right: 15px;
-  }
-  .menu-allhtml nav ul li {
-    padding: 15px;
-    border-radius: 80px;
-    background-color: rgb(44, 0, 44);
-    transition: background-color 0.5s;
-  }
-  .menu-allhtml nav ul li:hover {
-    background-color: rgb(119, 0, 119);
-  }
-  .menu-allhtml nav ul li a {
-    color: rgb(255, 196, 0);
-    text-decoration: none;
-  }
-}
 .home .introduccion {
   background-image: url("../img/toti-chet.png");
   background-size: cover;

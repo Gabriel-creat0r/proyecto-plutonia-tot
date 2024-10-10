@@ -49,44 +49,7 @@ body{
         }
     }
 }
-@media screen and (min-width:600px){
-    .menu-allhtml {
-    @include flex;
-    flex-wrap: wrap; 
-    justify-content: space-evenly;
 
-    img {
-        padding: 30px;
-        margin: 10px;
-    }
-
-    nav {
-        ul {
-            display: flex;
-            list-style: none;
-            gap: 0.5rem;
-            padding-right: 15px;
-
-            li{
-                padding: 15px;
-                border-radius: 80px;
-                background-color: nth($list-color, 2);
-                transition: background-color 0.5s;
-                &:hover {
-                    background-color: nth($list-color, 4);
-                }
-                a{
-                    color: nth($list-color, 3);    
-                    text-decoration: none;        
-                }
-
-            }
-        }
-    }
-}
-
-    
-}
 //html HOME
 //seccion del main 
  .home{
