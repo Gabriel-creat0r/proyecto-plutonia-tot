@@ -8,26 +8,23 @@ body{
     background-color: $color-principal;
 }
 //Menu de navegacion para todas las HTML
-.menu-allhtml {
+.menu-allhtml{
     @include flex;
     flex-wrap: wrap; 
     justify-content: space-evenly;
 
-    img {
+    img{
         padding: 30px;
         margin: 10px;
     }
 
-    nav {
-
-        ul {
+    nav{
+        ul{
             display: flex;
             list-style: none;
             gap: 0.5rem;
             padding-right: 15px;
-
             li{
-                
                 padding: 15px;
                 border-radius: 80px;
                 background-color: nth($list-color, 2);
@@ -41,10 +38,8 @@ body{
                     text-decoration: none;
                     font-family: "Cinzel", serif;
                     font-optical-sizing: auto;
-                    font-weight: 600;
-                    
+                    font-weight: 600;           
                 }
-
             }
         }
     }
@@ -53,7 +48,6 @@ body{
 //html HOME
 //seccion del main 
  .home{
-
     .introduccion{
         background-image: url('../img/toti-chet.png');
         background-size: cover;
@@ -115,9 +109,7 @@ body{
                     }
                 }
             }
-            .text-camison{
-                         
-                
+            .text-camison{         
                 @include img-home;
                 p{
                     .hide{
@@ -133,7 +125,6 @@ body{
             }
         }
     }
-
  }
 
  //estilos de home para TABLET
@@ -215,7 +206,7 @@ body{
             border-radius: 80px;
             transition: background-color 0.5s;
 
-            &:hover {
+            &:hover{
                 background-color: nth($list-color, 5);
             }
 
@@ -266,6 +257,7 @@ h1{
     color: white;
     text-align: center;
     margin: 50px;
+    @include txt-style
 }
 .indu{
     margin: 40px 40px;
@@ -273,6 +265,7 @@ h1{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 29%);
     row-gap: 1.5rem;
+    @include txt-style;
     .ind-tres, .ind-cuatro{
         display: none;
     }
